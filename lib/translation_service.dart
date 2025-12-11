@@ -3,9 +3,7 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 
-// ★★★ 取得したご自身の API キーに置き換えてください ★★★
-const String GEMINI_API_KEY = 'AIzaSyCEqUEBoPwp3Dq_VzwL0Dbmja620JgexfE';
-// ★★★ 取得したご自身の API キーに置き換えてください ★★★
+const String GEMINI_API_KEY = 'Enter Your API Key';
 
 class TranslationService {
   final String apiUrl =
@@ -44,12 +42,10 @@ class TranslationService {
       if (response.statusCode == 200) {
         final data = json.decode(response.body);
 
-        // LLMの応答からJSON文字列を抽出
         final text =
             data['candidates'][0]['content']['parts'][0]['text'] as String;
 
         // JSONパース
-        // LLMの出力は時にJSONの前後が汚れるため、JSONブロックだけを抽出する
         final jsonString = text.substring(
           text.indexOf('{'),
           text.lastIndexOf('}') + 1,
