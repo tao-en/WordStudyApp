@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'word_data.dart';
 import 'image_service.dart';
-import 'translation_service.dart'; // ★Gemini APIのサービスをインポート
+import 'translation_service.dart'; 
 
 class WordEditAddScreen extends StatefulWidget {
   final Word? wordToEdit;
