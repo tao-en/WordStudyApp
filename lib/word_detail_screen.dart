@@ -141,8 +141,7 @@ class _WordDetailScreenState extends State<WordDetailScreen> {
       ),
     );
     //await Future.delayed(const Duration(milliseconds: 100));
-    // データを親へ渡し、画面を閉じる。setStateは不要。
-    //Navigator.pop(context);
+    // データを親へ渡し、画面を閉じる。
     Navigator.popUntil(context, ModalRoute.withName('/'));
   }
 
