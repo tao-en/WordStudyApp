@@ -30,13 +30,16 @@
    ```bash
    git clone [https://github.com/tao-en/WordStudyApp.git](https://github.com/tao-en/WordStudyApp.git)
    cd WordStudyApp
+   ```
 
 2. 必要なパッケージをインストールします。
     ```bash
     flutter pub get
+    ```
 
 3. 上記の記載の通り、各APIサービスファイルにキーを設定します。
 
 4. アプリを実行します。
     ```bash
     flutter run
+    ```
